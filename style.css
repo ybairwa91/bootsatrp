@@ -3,3 +3,12 @@
     height: 500px;
     /* max-width: 996px; */
 }
+
+#green {
+    background-color: green;
+    height: 100px;
+}
+
+#blue {
+    background-color: blue;
+}
