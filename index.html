@@ -13,38 +13,75 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid" id="red">
-      <div class="row" id="green">
-        <div class="col-lg-4 bg-primary text-white">Column-4</div>
-        <div class="col-lg-6 bg-secondary text-white">Column-6</div>
-        <div class="col-lg-2 bg-success text-white">Column-5</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="" alt="" /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >First</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Second</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Third
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">A</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">B</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">C</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">NO</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
-
-    <!-- <div class="bg-danger text-white">
-      <h1>hello</h1>
-    </div> -->
-
-    <!-- Breakpoint	   Class infix 	Dimensions
-         Extra small	  None	      <576px        col=*
-         Small	        sm	        ≥576px        col-sm-*
-         Medium	        md	        ≥768px        col-md-*
-         Large	        lg	        ≥992px        col-lg-*
-         Extra large	  xl	        ≥1200px       col-xl-*
-         Extra extra    xxl	        ≥1400px        col-xxl-*
-         large	  
-        
-    -->
-
-    <!-- bootstrap flow
-    
-          1. container>row>column>row>column(text and images)
-          2.content always in column not in row or directly in container 
-          3. row parent can be container or column as well
-          4.column parent must always be a row
-        
-        
-    -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
